@@ -1,0 +1,52 @@
+
+namespace Uçuş_Rezervasyon
+{
+    public partial class Form1 : Form
+    {
+        public Form1()
+        {
+            InitializeComponent();
+        }
+
+        private void groupBox1_Enter(object sender, EventArgs e)
+        {
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            listBox2.Items.Add("Rota: " + comboBox1.Text + " - " + comboBox2.Text + " Tarih: " +
+                             dateTimePicker1.Value.ToString("dd.MM.yyyy") + " Saat: " + maskedTextBox1.Text +
+                             " Yolcu Bilgileri ~ Ad: " + textBox1.Text + " Tc: " + maskedTextBox2.Text +
+                             " Telefon: " + maskedTextBox3.Text);
+
+            MessageBox.Show("Yolcu Kaydı Yapıldı");
+        }
+
+        private void label8_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void listBox2_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            label9.Text = comboBox2.Text;
+            comboBox2.Text = comboBox1.Text;
+            comboBox1.Text = label9.Text;
+        }
+
+        private void groupBox1_Enter_1(object sender, EventArgs e)
+        {
+
+        }
+    }
+}
